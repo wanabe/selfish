@@ -1,4 +1,4 @@
-require "selfish"
+require "selfish/core"
 
 module Selfish::OneCharacter
   alias i selfish
