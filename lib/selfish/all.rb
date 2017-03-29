@@ -1,3 +1,2 @@
+STDERR.puts "Warning: deprecated. please require \"selfish\" instead."
 require "selfish"
-require "selfish/_"
-require "selfish/1"
