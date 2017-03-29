@@ -1,11 +1,12 @@
 # Selfish
 
-Selfish#selfish ... Set block first parameter to self
-Selfish#_self   ... just 'self'
+`Selfish#selfish` ... Set block first parameter to self
+`Selfish#_self`   ... just 'self'
 
 You can use `Selfish::UnderScore#_` as alias of above two methods with `require "selfish/_"`.
-And also you can use `Selfish::OneCharacter#s` as `self` and `Selfish::OneCharacter#i` as same as `Selfish#selfish`
-with `require "selfish/1"`.
+And also you can use `Selfish::OneCharacter#s` as `self` and `Selfish::OneCharacter#i` as same as `Selfish#selfish` with `require "selfish/1"`.
+
+You can use all features with just `require "selfish"`.
 
 ## Installation
 
@@ -28,7 +29,7 @@ Or install it yourself as:
 Like below:
 
 ```
-require "selfish/all"
+require "selfish"
 
 ["foo", "bar"].map.with_index &i("baz", "qux"){|a, b, i| [a, b, i, _, upcase]}
 #=> [["baz", "qux", 0, "foo", "FOO"], ["baz", "qux", 1, "bar", "BAR"]]
